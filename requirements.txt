@@ -1,0 +1,11 @@
+Prototype de **jumeau numérique patrimonial sécurisé** combinant :
+- Modélisation 3D
+- Systèmes d’Information Géographique (SIG)
+- Base de données spatialisée
+- Couche de cybersécurité (intégrité des données)
+
+## 🎯 Objectif
+Créer un dispositif numérique intégré permettant :
+- la **conservation scientifique** du patrimoine
+- la **médiation culturelle interactive**
+- la **fiabilité et sécurité des données**
