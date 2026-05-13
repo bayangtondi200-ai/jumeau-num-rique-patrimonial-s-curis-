@@ -4,8 +4,29 @@ Prototype de **jumeau numérique patrimonial sécurisé** combinant :
 - Base de données spatialisée
 - Couche de cybersécurité (intégrité des données)
 
+##  Prototype de **jumeau numérique patrimonial sécurisé** combinant :
+- Modélisation 3D
+- Systèmes d’Information Géographique (SIG)
+- Base de données spatialisée
+- Couche de cybersécurité (intégrité des données)
+
 ## 🎯 Objectif
 Créer un dispositif numérique intégré permettant :
 - la **conservation scientifique** du patrimoine
 - la **médiation culturelle interactive**
 - la **fiabilité et sécurité des données**
+
+## 🧠 Stack technique
+- Python
+- QGIS / GeoJSON
+- PostgreSQL / PostGIS (concept)
+- Blender (modélisation 3D)
+- Hash SHA-256 (intégrité)
+
+## 📂 Structure
+- `/gis` : données géospatiales
+- `/security` : scripts sécurité
+- `/app` : prototype interface
+- `/docs` : documentation scientifique
+
+##oob 
