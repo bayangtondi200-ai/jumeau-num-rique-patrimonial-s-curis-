@@ -1,0 +1,15 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bâtiment Patrimonial Exemple"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.5021, 3.8480]
+      }
+    }
+  ]
+}
