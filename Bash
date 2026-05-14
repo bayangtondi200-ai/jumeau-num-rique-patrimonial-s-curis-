@@ -1,0 +1,4 @@
+git clone https://github.com/bayangtondi200-ai/digital-heritage-twin
+cd digital-heritage-twin
+pip install -r requirements.txt
+python app/app.py
