@@ -1,32 +1,36 @@
-Prototype de **jumeau numérique patrimonial sécurisé** combinant :
-- Modélisation 3D
-- Systèmes d’Information Géographique (SIG)
-- Base de données spatialisée
-- Couche de cybersécurité (intégrité des données)
+# ⚙️ **requirements.txt**
 
-##  Prototype de **jumeau numérique patrimonial sécurisé** combinant :
-- Modélisation 3D
-- Systèmes d’Information Géographique (SIG)
-- Base de données spatialisée
-- Couche de cybersécurité (intégrité des données)
+```txt
+flask
+geopandas
+shapely
+🔐 security/data_integrity.py
+Python
+Copier le code
+import hashlib
 
-## 🎯 Objectif
-Créer un dispositif numérique intégré permettant :
-- la **conservation scientifique** du patrimoine
-- la **médiation culturelle interactive**
-- la **fiabilité et sécurité des données**
+def generate_hash(file_path):
+    """Génère un hash SHA-256 pour un fichier"""
+    sha256 = hashlib.sha256()
+    
+    with open(file_path, "rb") as f:
+        for chunk in iter(lambda: f.read(4096), b""):
+            sha256.update(chunk)
+    
+    return sha256.hexdigest()
 
-## 🧠 Stack technique
-- Python
-- QGIS / GeoJSON
-- PostgreSQL / PostGIS (concept)
-- Blender (modélisation 3D)
-- Hash SHA-256 (intégrité)
 
-## 📂 Structure
-- `/gis` : données géospatiales
-- `/security` : scripts sécurité
-- `/app` : prototype interface
-- `/docs` : documentation scientifique
+def verify_integrity(file_path, original_hash):
+    """Vérifie si un fichier a été modifié"""
+    current_hash = generate_hash(file_path)
+    return current_hash == original_hash
 
-##oob 
+
+if __name__ == "__main__":
+    file = "../gis/sample_data.geojson"
+    
+    original = generate_hash(file)
+    print("Hash original :", original)
+
+    is_valid = verify_integrity(file, original)
+    print("Intégrité vérifiée :", is_valid
